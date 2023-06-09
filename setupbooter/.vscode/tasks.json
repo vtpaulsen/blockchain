@@ -1,0 +1,210 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Inspect container 1",
+            "type": "shell",
+            "command": "docker attach dissy_peer_1",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 2",
+            "type": "shell",
+            "command": "docker attach dissy_peer_2",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 3",
+            "type": "shell",
+            "command": "docker attach dissy_peer_3",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 4",
+            "type": "shell",
+            "command": "docker attach dissy_peer_4",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 5",
+            "type": "shell",
+            "command": "docker attach dissy_peer_5",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 6",
+            "type": "shell",
+            "command": "docker attach dissy_peer_6",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 7",
+            "type": "shell",
+            "command": "docker attach dissy_peer_7",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 8",
+            "type": "shell",
+            "command": "docker attach dissy_peer_8",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 9",
+            "type": "shell",
+            "command": "docker attach dissy_peer_9",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 10",
+            "type": "shell",
+            "command": "docker attach dissy_peer_10",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 11",
+            "type": "shell",
+            "command": "docker attach dissy_peer_11",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 12",
+            "type": "shell",
+            "command": "docker attach dissy_peer_12",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 13",
+            "type": "shell",
+            "command": "docker attach dissy_peer_13",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 14",
+            "type": "shell",
+            "command": "docker attach dissy_peer_14",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 15",
+            "type": "shell",
+            "command": "docker attach dissy_peer_15",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 16",
+            "type": "shell",
+            "command": "docker attach dissy_peer_16",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 17",
+            "type": "shell",
+            "command": "docker attach dissy_peer_17",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 18",
+            "type": "shell",
+            "command": "docker attach dissy_peer_18",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 19",
+            "type": "shell",
+            "command": "docker attach dissy_peer_19",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Inspect container 20",
+            "type": "shell",
+            "command": "docker attach dissy_peer_20",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        },
+        {
+            "label": "Boot Setup X",
+            "type": "shell",
+            "command": "cd ..; make Cleanup; make Build; cd setupbooter; go run main.go ${input:setup};",
+            "problemMatcher": [],
+            "presentation": {
+                "group": "docker"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "setup",
+            "description": "Choose a setup",
+            "default": "SetupC",
+            "type": "pickString",
+            "options": [
+                "SetupA",
+                "SetupB",
+                "SetupC",
+                "SetupD"
+            ],
+        }
+    ]
+}

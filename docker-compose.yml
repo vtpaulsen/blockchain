@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  peer:
+    build: .
+    image: dissy
+    stdin_open: true
+    network_mode: host
+    command: /bin/sh -c "chmod +x ./entrypoint.sh; ./entrypoint.sh"

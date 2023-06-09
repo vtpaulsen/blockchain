@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+            "name": "Root Files",
+            "path": "."
+        },
+		{
+			"name": "Setup Booter",
+			"path": "setupbooter"
+		},
+		{
+			"name": "Source",
+			"path": "src"
+		}
+	]
+}
